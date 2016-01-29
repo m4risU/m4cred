@@ -2,9 +2,9 @@ applications:
 - path: .
   memory: 256M
   instances: 1
-  domain: mybluemix.net
-  name: credential-me
-  host: credential-me
+  domain: eu-gb.mybluemix.net
+  name: m4cred
+  host: m4cred
   disk_quota: 1024M
   services:
   - Cloudant NoSQL DB-cm
