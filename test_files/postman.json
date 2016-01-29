@@ -1,0 +1,756 @@
+{
+	"id": "e8816396-0e6b-8f60-df37-1b131193c69d",
+	"name": "SIBM",
+	"description": "",
+	"order": [
+		"5cd97810-106b-7102-1f60-da57a403875b",
+		"d156a959-53d5-721d-0d86-92f940b6baa3",
+		"3839e3bb-0bd1-7875-c386-c8b77e6c11a0",
+		"781ad6d7-3b6c-4b83-54a3-04d008a9eff1",
+		"5c3eb57d-4316-0962-e691-bae2588afab6",
+		"968f106b-7966-1258-1336-0a40ecc9b72f",
+		"c45e466a-7392-a81b-bd65-2da5ef0104fc",
+		"533f2215-79ed-3b36-56bf-905c4765731d",
+		"7588b549-fbb3-4ac9-5d9d-3c095b9fe8d6",
+		"01ef70b5-ec4e-fc85-2028-06a91b7758f7",
+		"a1954c3c-563c-8ac1-7ca7-5fee6e8fb5d6",
+		"3f5ca497-1450-c7a8-bfc6-c201d730cbff",
+		"a928df3e-0f2d-10c1-fd1b-28350a68f3c0",
+		"74176bc7-d972-b8a2-dd6e-6c0fc55d59b0",
+		"ce62972b-ef41-bd84-c88a-1b6f5adec6f0",
+		"4a4ba4de-9fd4-d273-0b62-ea021bfd7517",
+		"6035d6ab-19f1-469d-4c99-d32b938ce840",
+		"2b08e170-89f6-c9b9-6972-b27b6fdc69a2",
+		"4e09ff3d-6fad-908e-0fbd-98fb622eedda",
+		"cbb0be19-bcc7-bbce-3a73-c315a11a8ad7"
+	],
+	"folders": [
+		{
+			"id": "341f160d-15ed-3fe7-a54a-536040b97c6e",
+			"name": "errors",
+			"description": "",
+			"order": [
+				"d5d7dfba-38c0-200d-6333-9abbb9a4c709",
+				"dfecd814-8e32-00ee-a163-6acb91a07021",
+				"d670fd3f-4610-c08c-176e-5a3d7aa8bd03",
+				"9eb48f8a-94f5-26c3-22c5-d95049f0a0e9",
+				"9cc572c5-59c7-1d15-55b9-737e2bb97f44",
+				"ee75a08a-f8e6-02fe-019e-e6b72d13cfa3",
+				"2ef001e2-a806-d718-2a89-f80ba26ddd13",
+				"eaaeac33-307a-5fcc-fefe-1f7e424b06e4"
+			],
+			"owner": 0,
+			"collectionId": "8ab4eda8-3458-cf32-c1e2-541c015fa7f6"
+		}
+	],
+	"timestamp": 1448931524109,
+	"owner": 0,
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "01ef70b5-ec4e-fc85-2028-06a91b7758f7",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/publish",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion1"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449118599809,
+			"name": "api/v1/badge/:id/publish",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "2b08e170-89f6-c9b9-6972-b27b6fdc69a2",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/feedback",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "message",
+					"value": "feed back",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f2.txt",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f2.txt",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449119558745,
+			"name": "api/v1/feedback",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "2ef001e2-a806-d718-2a89-f80ba26ddd13",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/comment/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "not exist"
+			},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449100846947,
+			"name": "comment not exist",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		},
+		{
+			"id": "3839e3bb-0bd1-7875-c386-c8b77e6c11a0",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/earners?order=desc",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badge1"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449118757089,
+			"name": "api/v1/badge/:id/earners",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "3f5ca497-1450-c7a8-bfc6-c201d730cbff",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/profile/:id/detail",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "intranetID1"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448972498479,
+			"name": "api/v1/profile/:id/detail",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "4a4ba4de-9fd4-d273-0b62-ea021bfd7517",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/profile/:id/favorite?pageNum=1&pageSize=2",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "intranetID1"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449025764150,
+			"name": "api/v1/profile/:id/favorite",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "4e09ff3d-6fad-908e-0fbd-98fb622eedda",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/search?pageNum=1&pageSize=2&criteria=name9",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "message",
+					"value": "feed back",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f2.txt",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f1.txt",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449103746214,
+			"name": "api/v1/search",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "533f2215-79ed-3b36-56bf-905c4765731d",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/unfavor",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badge6"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449563611643,
+			"name": "api/v1/badge/:id/unfavor",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "5c3eb57d-4316-0962-e691-bae2588afab6",
+			"headers": "authorization: JWT {{TOKEN}}\nContent-Type: application/json\n",
+			"url": "{{URL}}/api/v1/badge/:id/comment",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion3"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449118163382,
+			"name": "api/v1/badge/:id/comment",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"rawModeData": "{\n    \"content\":\"new comment content\"\n}"
+		},
+		{
+			"id": "5cd97810-106b-7102-1f60-da57a403875b",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/stream?pageNum=3&pageSize=4",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "message",
+					"value": "feed back",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f2.txt",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": null,
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449117891260,
+			"name": "api/v1/stream",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "6035d6ab-19f1-469d-4c99-d32b938ce840",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/profile/:id/notifications?pageNum=1&pageSize=15",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "intranetID1"
+			},
+			"method": "GET",
+			"data": [
+				{
+					"key": "message",
+					"value": "feed back",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f2.txt",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f1.txt",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449105191840,
+			"name": "api/v1/profile/:id/notifications",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "74176bc7-d972-b8a2-dd6e-6c0fc55d59b0",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/profile/:id/comments?pageNum=1&pageSize=2",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "intranetID1"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449021866323,
+			"name": "api/v1/profile/:id/comments",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "7588b549-fbb3-4ac9-5d9d-3c095b9fe8d6",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/like",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion15"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449118345163,
+			"name": "api/v1/badge/:id/like",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "781ad6d7-3b6c-4b83-54a3-04d008a9eff1",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/comments?order=desc&pageNum=1&pageSize=2",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion3"
+			},
+			"method": "GET",
+			"data": [
+				{
+					"key": "message",
+					"value": "feed back",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": "f2.txt",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": null,
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449118097011,
+			"name": "api/v1/badge/:id/comments",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "968f106b-7966-1258-1336-0a40ecc9b72f",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/comment/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeComment3"
+			},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449122248990,
+			"name": "api/v1/comment/:id",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "9cc572c5-59c7-1d15-55b9-737e2bb97f44",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/profile/:id/detail",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "not exist"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449100772537,
+			"name": "user not exist",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		},
+		{
+			"id": "9eb48f8a-94f5-26c3-22c5-d95049f0a0e9",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/like",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "not exist"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449100654206,
+			"name": "assertion not exist",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		},
+		{
+			"id": "a1954c3c-563c-8ac1-7ca7-5fee6e8fb5d6",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/unpublish",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion1"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449122293479,
+			"name": "api/v1/badge/:id/unpublish",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "a928df3e-0f2d-10c1-fd1b-28350a68f3c0",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/profile/:id/testimonials?pageNum=1&pageSize=2&order=asc",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "intranetID1"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449018486523,
+			"name": "api/v1/profile/:id/testimonials ",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "c45e466a-7392-a81b-bd65-2da5ef0104fc",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/favor",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badge6"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449563593546,
+			"name": "api/v1/badge/:id/favor",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "cbb0be19-bcc7-bbce-3a73-c315a11a8ad7",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/user/:id/badge/:uid",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "intranetID1",
+				"uid": "uid9"
+			},
+			"method": "GET",
+			"data": [
+				{
+					"key": "message",
+					"value": "feed back",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": null,
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "files",
+					"value": null,
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449119524707,
+			"name": "api/v1/user/:id/badge/:uid",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "ce62972b-ef41-bd84-c88a-1b6f5adec6f0",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/profile/:id/badges?pageNum=1&pageSize=2",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "intranetID1"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449023942370,
+			"name": "api/v1/profile/:id/badges",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "d156a959-53d5-721d-0d86-92f940b6baa3",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/detail",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion15"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449120642469,
+			"name": "api/v1/badge/:id/detail",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": []
+		},
+		{
+			"id": "d5d7dfba-38c0-200d-6333-9abbb9a4c709",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/like",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion1"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449100664035,
+			"name": "can not perform on self created assertion",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		},
+		{
+			"id": "d670fd3f-4610-c08c-176e-5a3d7aa8bd03",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/like",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion99"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449100736762,
+			"name": "can not perform on expired assertion",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		},
+		{
+			"id": "dfecd814-8e32-00ee-a163-6acb91a07021",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/like",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "badgeAssertion16"
+			},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449100673850,
+			"name": "can not perform on not published assertion",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		},
+		{
+			"id": "eaaeac33-307a-5fcc-fefe-1f7e424b06e4",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/stream?pageNum=-1&pageSize=2",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449120823957,
+			"name": "400 bad request",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		},
+		{
+			"id": "ee75a08a-f8e6-02fe-019e-e6b72d13cfa3",
+			"headers": "authorization: JWT {{TOKEN}}\n",
+			"url": "{{URL}}/api/v1/badge/:id/earners?order=desc",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "not exist"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1449100816196,
+			"name": "badge not exist",
+			"description": "",
+			"collectionId": "e8816396-0e6b-8f60-df37-1b131193c69d",
+			"responses": [],
+			"folder": "341f160d-15ed-3fe7-a54a-536040b97c6e"
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+  "CLOUDANT_DB_DATABASE_ALREADY_EXISTS": 412,
+  "OK_STATUS_CODE": 200,
+  "BAD_REQUEST_STATUS_CODE": 400,
+  "NOT_AUTHENTICATED_STATUS_CODE": 401,
+  "FORBIDDEN_STATUS_CODE": 403,
+  "NOT_FOUND_STATUS_CODE": 404,
+  "METHOD_NOT_SUPPORT_STATUS_CODE":405,
+  "INTERNAL_SERVER_STATUS_CODE": 500,
+  "STATUS_CODES":[200, 400, 401, 403, 404, 405, 500],
+  "DATABASE":"sibm-db",
+  "MODEL_TYPES":{
+    "User":1,
+    "BadgeAssertion":2,
+    "Badge":3 ,
+    "BadgeComment":4,
+    "BadgeFavor":5,
+    "BadgeLike":6,
+    "Feedback":7
+  },
+  "USER_MODEL":"User",
+  "BADGE_MODEL":"Badge",
+  "BADGE_ASSERTION_MODEL":"BadgeAssertion",
+  "BADGE_COMMENT_MODEL":"BadgeComment",
+  "USER_NOT_EXIST_CODE":10001,
+  "BADGE_ASSERTION_NOT_EXIST_CODE":10002,
+  "BADGE_NOT_EXIST_CODE":10003,
+  "BADGE_ASSERTION_NOT_PUBLISHED":10004,
+  "BADGE_COMMENT_NOT_EXIST_CODE":10005,
+  "ERROR_CODES":{
+    "User":{
+      "10001": "User does not exist"
+    },
+    "BadgeAssertion":{
+      "10002": "Badge Assertion does not exist",
+      "10004":"Badge Assertion is not published"
+    },
+    "Badge":{
+      "10003":"Badge does not exist"
+    },
+    "BadgeComment":{
+      "10005":"Badge Comment does not exist"
+    }
+  },
+  "BADGEASSERTION_DESIGN_NAME":"badge_assertion_design",
+  "BADGEASSERTION_INDEX_NAME":"badge_assertion_index",
+  "JWT_OPTIONS":{
+    "secretOrKey":"top secret",
+    "issuer":"www.ibm.com",
+    "expiresIn":"7 days"
+  },
+  "LOG_LEVEL":"info",
+  "UPLOAD_FOLDER":"./upload",
+  "AUTH_URL": "https://token-service.mybluemix.net/api/token-service/auth",
+  "EMAIL": {
+    "SENDGRID_API_KEY": "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",
+    "FROM": "example@ibm-credentialme.com"
+  }
+}

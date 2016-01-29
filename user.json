@@ -1,0 +1,32 @@
+[
+   {
+      "type": 1,
+      "intranetID": "userTest1",
+      "name": "user name1",
+      "photo": "userTest1.jpg",
+      "id": "user1",
+      "rev": "1-78636487f801ee5e4c03e3abc55ba48b",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoxLCJpbnRyYW5ldElEIjoidXNlclRlc3QxIiwibmFtZSI6InVzZXIgbmFtZTEiLCJwaG90byI6InVzZXJUZXN0MS5qcGciLCJpZCI6InVzZXIxIiwicmV2IjoiMS03ODYzNjQ4N2Y4MDFlZTVlNGMwM2UzYWJjNTViYTQ4YiIsImlhdCI6MTQ1MTM0NDAxOCwiZXhwIjoxNDUxOTQ4ODE4LCJpc3MiOiJ3d3cuaWJtLmNvbSJ9.5jlL9wruQ6BNIrEPpF1Mv6MopqLIJ00Nb2XP4w5mE0I",
+      "tokeExpiresAt": 1451948818000
+   },
+   {
+      "type": 1,
+      "intranetID": "userTest2",
+      "name": "user name2",
+      "photo": "userTest2.jpg",
+      "id": "user2",
+      "rev": "1-0d583eca0a44486308083074cc6d18dd",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoxLCJpbnRyYW5ldElEIjoidXNlclRlc3QyIiwibmFtZSI6InVzZXIgbmFtZTIiLCJwaG90byI6InVzZXJUZXN0Mi5qcGciLCJpZCI6InVzZXIyIiwicmV2IjoiMS0wZDU4M2VjYTBhNDQ0ODYzMDgwODMwNzRjYzZkMThkZCIsImlhdCI6MTQ1MTM0NDAxOCwiZXhwIjoxNDUxOTQ4ODE4LCJpc3MiOiJ3d3cuaWJtLmNvbSJ9.m5czVkzl8Bs98EZ7b0vygjfIsBgScfSvbmD_yLKIqYA",
+      "tokeExpiresAt": 1451948818000
+   },
+   {
+      "type": 1,
+      "intranetID": "userTest3",
+      "name": "user name3",
+      "photo": "userTest3.jpg",
+      "id": "user3",
+      "rev": "1-2fce704b4e49d8abf6667d54f60d625b",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoxLCJpbnRyYW5ldElEIjoidXNlclRlc3QzIiwibmFtZSI6InVzZXIgbmFtZTMiLCJwaG90byI6InVzZXJUZXN0My5qcGciLCJpZCI6InVzZXIzIiwicmV2IjoiMS0yZmNlNzA0YjRlNDlkOGFiZjY2NjdkNTRmNjBkNjI1YiIsImlhdCI6MTQ1MTM0NDAxOCwiZXhwIjoxNDUxOTQ4ODE4LCJpc3MiOiJ3d3cuaWJtLmNvbSJ9.2n8DE5nSLQkxqL7xpasK5Z3yKQZVgeThWxwSlRQWG-M",
+      "tokeExpiresAt": 1451948818000
+   }
+]
